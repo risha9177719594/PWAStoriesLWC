@@ -1,7 +1,7 @@
 {
-    "name": "LWC PWA Demo",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "name": "Stories with LWC PWA",
+    "theme_color": "#FFC300",
+    "background_color": "#FFC300",
     "display": "standalone",
     "short_name": "LWC",
     "Scope": "/",
