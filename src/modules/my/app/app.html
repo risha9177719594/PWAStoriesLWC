@@ -3,11 +3,20 @@
         <h1>Stories</h1>
         <template for:each={contacts} for:item="contact">
             <img src={contact.img} alt="Profile photo"></img>
-            <div key={contact.id} class="contact">
+            <div key={contact.id} class="contact" onselect={handleTransactionSelect}>
                 
                 <p>{contact.name}</p>
-                <p>{contact.story}</p>
             </div>
         </template>
+    <div class="contact-details">
+                    <template if:true={selectedTransaction}>
+                        <img
+                            src={selectedTransaction.img}
+                            alt="Profile photo"
+                        />
+                        <p>{selectedTransaction.name}</p>
+                        <p>{selectedTransaction.story}</p>
+                    </template>
+                </div>
     </div>
 </template>
