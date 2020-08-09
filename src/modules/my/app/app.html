@@ -3,6 +3,10 @@
         <h1>Stories</h1>
         <template for:each={contacts} for:item="contact">
             <div key={contact.id} class="contact">
+                <img
+                            src={selectedTransaction.Picture}
+                            alt="Profile photo"
+                        />
                 <p>{contact.name}</p>
                 <p>{contact.story}</p>
             </div>
