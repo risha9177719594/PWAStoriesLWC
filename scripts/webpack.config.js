@@ -18,10 +18,6 @@ module.exports = {
                 {
                     urlPattern: new RegExp('api/contacts$'),
                     handler: 'StaleWhileRevalidate'
-                },
-                {
-                    urlPattern: new RegExp('api/stories$'),
-                    handler: 'StaleWhileRevalidate'
                 }
             ]
         })
