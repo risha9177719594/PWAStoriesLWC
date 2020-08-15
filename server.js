@@ -30,9 +30,7 @@ app.use(compression());
 app.use('/', express.static(path.join(__dirname, 'dist')));
 
 app.get('/api/contacts', (req, res) => {
-    //debugger;
-    fetch('https://myrisha1.herokuapp.com/people/restExampleString/rest').then(response => response.json()).then(data => res.send(data));
-    
+    res.send(contacts);    
 });
 
 app.listen(PORT, () =>
