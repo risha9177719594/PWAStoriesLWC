@@ -12,6 +12,8 @@ export default class App extends LightningElement {
         }).then( contacts => {
             this.contacts = contacts;
         });
+        fetch('https://myrisha1.herokuapp.com/people/restExampleString/rest').then(response => response.json()).then(data => alert(data));
     }
+
 
 }
