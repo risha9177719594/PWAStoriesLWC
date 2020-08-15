@@ -8,6 +8,7 @@ export default class App extends LightningElement {
 
     connectedCallback() {
         fetch(CONTACTS_URL).then(response => {
+            alert('test again');
             return response.json();
         }).then( contacts => {
             this.contacts = contacts;
