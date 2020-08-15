@@ -14,7 +14,7 @@ export default class App extends LightningElement {
         });
         fetch('https://myrisha1.herokuapp.com/people/restExampleString/rest').then(response => response.json()).then(data => alert(data));
     }
-async function postData(url = '') {
+postData(url = '') {
   // Default options are marked with *
   const response = await fetch(url, {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
