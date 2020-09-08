@@ -8,7 +8,7 @@ export default class Stories extends LightningElement {
 
     connectedCallback() {
         fetch(CONTACTS_URL).then(response => {
-            alert('test again 112233');
+            //alert('test again 112233');
             return response.json();
         }).then( contacts => {
             this.contacts = contacts;
