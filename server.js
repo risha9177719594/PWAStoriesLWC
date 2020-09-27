@@ -33,23 +33,31 @@ app.get('/api/contacts', (req, res) => {
     res.send(contacts);    
 });
 const https = require('https');
-
+alert('test1');
 https.get('https://api.cricket.com.au/scorecards/full/2514/47946?format=json', (resp) => {
   let data = '';
+alert('test2');
 
   // A chunk of data has been recieved.
   resp.on('data', (chunk) => {
+alert('test3');
     data += chunk;
+alert('test4');
   });
 
   // The whole response has been received. Print out the result.
   resp.on('end', () => {
+      
+alert('test5');
     console.log(JSON.parse(data));
   });
+alert('test6');
 
 }).on("error", (err) => {
+alert('test7');
   console.log("Error: " + err.message);
 });
+alert('test8');
 app.listen(PORT, () =>
     console.log(`✅ Server started: http://${HOST}:${PORT}`)
 );
