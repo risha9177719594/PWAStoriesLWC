@@ -32,6 +32,7 @@ app.use('/', express.static(path.join(__dirname, 'dist')));
 app.get('/api/contacts', (req, res) => {
     res.send(contacts);    
 });
+alert('teest');
 const https = require('https');
 alert('test1');
 https.get('https://api.cricket.com.au/scorecards/full/2514/47946?format=json', (resp) => {
